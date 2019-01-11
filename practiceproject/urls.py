@@ -18,4 +18,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # TODO point to the urls for gatewayapp path('gateway/', admin.site.urls),
 ]
