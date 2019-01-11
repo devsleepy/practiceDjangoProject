@@ -19,6 +19,7 @@ class Gateway(models.Model):
     model = models.CharField(max_length=255)
     serial_number = models.PositiveIntegerField()
     sim_id = models.PositiveIntegerField()
+    is_paid = models.BooleanField(default=False)
 
     # complex model field types
     website = models.URLField(blank=True, null=True)
